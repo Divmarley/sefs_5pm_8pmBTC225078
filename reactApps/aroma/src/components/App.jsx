@@ -1,25 +1,18 @@
 /** @format */
 
-import Header from './Header';
-import HeroBanner from './HeroBanner';
-import HeroCarousel from './HeroCarousel';
-import Main from './Main';
-import TrendingProduct from './TrendingProduct';
-import BlogSection from './BlogSection';
-import SubscribeSection from './SubscribeSection';
-import Footer from './Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from '../pages/Layout';
+import Home from '../pages/Home';
+import Contact from '../pages/Contact';
 export default function App() {
   return (
-    <>
-      <Header />
-      <Main>
-        <HeroBanner />
-        <HeroCarousel />
-        <TrendingProduct />
-        <BlogSection />
-        <SubscribeSection />
-      </Main> 
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='contact' element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
