@@ -1,149 +1,150 @@
 /** @format */
 
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, 
+ } from 'react-router-dom';
 
 export default function Header() {
   return (
     <>
-      <header class='header_area'>
-        <div class='main_menu'>
-          <nav class='navbar navbar-expand-lg navbar-light'>
-            <div class='container'>
-              <a class='navbar-brand logo_h' href='index.html'>
+      <header className='header_area'>
+        <div className='main_menu'>
+          <nav className='navbar navbar-expand-lg navbar-light'>
+            <div className='container'>
+              <a className='navbar-brand logo_h' href='index.html'>
                 <img src='img/logo.png' alt='' />
               </a>
               <button
-                class='navbar-toggler'
+                className='navbar-toggler'
                 type='button'
                 data-toggle='collapse'
                 data-target='#navbarSupportedContent'
                 aria-controls='navbarSupportedContent'
                 aria-expanded='false'
                 aria-label='Toggle navigation'>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
+                <span className='icon-bar'></span>
+                <span className='icon-bar'></span>
+                <span className='icon-bar'></span>
               </button>
               <div
-                class='collapse navbar-collapse offset'
+                className='collapse navbar-collapse offset'
                 id='navbarSupportedContent'>
-                <ul class='nav navbar-nav menu_nav ml-auto mr-auto'>
-                  <li class='nav-item active'>
-                    <a class='nav-link' href='/'>
+                <ul className='nav navbar-nav menu_nav ml-auto mr-auto'>
+                  <li className='nav-item active'>
+                    <a className='nav-link' href='/'>
                       Home
                     </a>
                   </li>
-                  <li class='nav-item submenu dropdown'>
+                  <li className='nav-item submenu dropdown'>
                     <a
                       href='#'
-                      class='nav-link dropdown-toggle'
+                      className='nav-link dropdown-toggle'
                       data-toggle='dropdown'
                       role='button'
                       aria-haspopup='true'
                       aria-expanded='false'>
                       Shop
                     </a>
-                    <ul class='dropdown-menu'>
-                      <li class='nav-item'>
-                        <a class='nav-link' href='category.html'>
+                    <ul className='dropdown-menu'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href='category.html'>
                           Shop Category
                         </a>
                       </li>
-                      <li class='nav-item'>
-                        <a class='nav-link' href='single-product.html'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href='single-product.html'>
                           Product Details
                         </a>
                       </li>
-                      <li class='nav-item'>
-                        <a class='nav-link' href='checkout.html'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href='checkout.html'>
                           Product Checkout
                         </a>
                       </li>
-                      <li class='nav-item'>
-                        <a class='nav-link' href='confirmation.html'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href='confirmation.html'>
                           Confirmation
                         </a>
                       </li>
-                      <li class='nav-item'>
-                        <a class='nav-link' href='cart.html'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href='cart.html'>
                           Shopping Cart
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li class='nav-item submenu dropdown'>
+                  <li className='nav-item submenu dropdown'>
                     <a
                       href='#'
-                      class='nav-link dropdown-toggle'
+                      className='nav-link dropdown-toggle'
                       data-toggle='dropdown'
                       role='button'
                       aria-haspopup='true'
                       aria-expanded='false'>
                       Blog
                     </a>
-                    <ul class='dropdown-menu'>
-                      <li class='nav-item'>
-                        <a class='nav-link' href='blog.html'>
+                    <ul className='dropdown-menu'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href='blog.html'>
                           Blog
                         </a>
                       </li>
-                      <li class='nav-item'>
-                        <a class='nav-link' href='single-blog.html'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href='single-blog.html'>
                           Blog Details
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li class='nav-item submenu dropdown'>
+                  <li className='nav-item submenu dropdown'>
                     <a
                       href='#'
-                      class='nav-link dropdown-toggle'
+                      className='nav-link dropdown-toggle'
                       data-toggle='dropdown'
                       role='button'
                       aria-haspopup='true'
                       aria-expanded='false'>
                       Pages
                     </a>
-                    <ul class='dropdown-menu'>
-                      <li class='nav-item'>
-                        <a class='nav-link' href='login.html'>
+                    <ul className='dropdown-menu'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href='login'>
                           Login
                         </a>
                       </li>
-                      <li class='nav-item'>
-                        <a class='nav-link' href='register.html'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href='register.html'>
                           Register
                         </a>
                       </li>
-                      <li class='nav-item'>
-                        <a class='nav-link' href='tracking-order.html'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href='tracking-order.html'>
                           Tracking
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li class='nav-item'>
-                    <a class='nav-link' href='contact.html'>
+                  <li className='nav-item'>
+                    <a className='nav-link' href='contact'>
                       Contact
                     </a>
                   </li>
                 </ul>
 
-                <ul class='nav-shop'>
-                  <li class='nav-item'>
+                <ul className='nav-shop'>
+                  <li className='nav-item'>
                     <button>
-                      <i class='ti-search'></i>
+                      <i className='ti-search'></i>
                     </button>
                   </li>
-                  <li class='nav-item'>
+                  <li className='nav-item'>
                     <button>
-                      <i class='ti-shopping-cart'></i>
-                      <span class='nav-shop__circle'>3</span>
+                      <i className='ti-shopping-cart'></i>
+                      <span className='nav-shop__circle'>3</span>
                     </button>{' '}
                   </li>
-                  <li class='nav-item'>
-                    <a class='button button-header' href='#'>
+                  <li className='nav-item'>
+                    <a className='button button-header' href='#'>
                       Buy Now
                     </a>
                   </li>
