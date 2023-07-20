@@ -11,7 +11,7 @@ export default function Header() {
         <div className='main_menu'>
           <nav className='navbar navbar-expand-lg navbar-light'>
             <div className='container'>
-              <a className='navbar-brand logo_h' href='index.html'>
+              <a className='navbar-brand logo_h' href='/'>
                 <img src='img/logo.png' alt='' />
               </a>
               <button
@@ -47,7 +47,7 @@ export default function Header() {
                     </a>
                     <ul className='dropdown-menu'>
                       <li className='nav-item'>
-                        <a className='nav-link' href='category.html'>
+                        <a className='nav-link' href='/shop'>
                           Shop Category
                         </a>
                       </li>
@@ -85,12 +85,12 @@ export default function Header() {
                     </a>
                     <ul className='dropdown-menu'>
                       <li className='nav-item'>
-                        <a className='nav-link' href='blog.html'>
+                        <a className='nav-link' href='/blog'>
                           Blog
                         </a>
                       </li>
                       <li className='nav-item'>
-                        <a className='nav-link' href='single-blog.html'>
+                        <a className='nav-link' href='product/detail'>
                           Blog Details
                         </a>
                       </li>
@@ -108,12 +108,12 @@ export default function Header() {
                     </a>
                     <ul className='dropdown-menu'>
                       <li className='nav-item'>
-                        <a className='nav-link' href='login'>
+                        <a className='nav-link' href='/login'>
                           Login
                         </a>
                       </li>
                       <li className='nav-item'>
-                        <a className='nav-link' href='register.html'>
+                        <a className='nav-link' href='/signup'>
                           Register
                         </a>
                       </li>

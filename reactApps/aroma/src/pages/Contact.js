@@ -1,9 +1,17 @@
 /** @format */
 
-import React from 'react';
+import React,{useState} from 'react';
 
 export default function Contact() {
+
+  const [name,setName] = useState(null)
+
+  const [email,setEmail]= useState(null);
+ 
+  console.log(name);
+  console.log(email);
   return (
+
     <>
       <section className='blog-banner-area' id='contact'>
         <div className='container h-100'>
@@ -60,14 +68,14 @@ export default function Contact() {
           </div>
         </div>
         <div className="col-md-8 col-lg-9">
-          <form action="#/" className="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" noValidate="novalidate">
+          <form action="#/" className="form-contact contact_form"  method="post" id="contactForm" noValidate="novalidate">
             <div className="row">
               <div className="col-lg-5">
                 <div className="form-group">
-                  <input className="form-control" name="name" id="name" type="text" placeholder="Enter your name"/>
+                  <input className="form-control" name="name" onChange={(txt)=>setName(txt.target.value)} id="name" type="text" placeholder="Enter your name" />
                 </div>
                 <div className="form-group">
-                  <input className="form-control" name="email" id="email" type="email" placeholder="Enter email address"/>
+                  <input onChange={function(t){ setEmail(t.target.value)}} className="form-control" name="email" id="email" type="email" placeholder="Enter email address"/>
                 </div>
                 <div className="form-group">
                   <input className="form-control" name="subject" id="subject" type="text" placeholder="Enter Subject"/>
